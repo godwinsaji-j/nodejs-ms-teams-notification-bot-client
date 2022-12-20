@@ -187,14 +187,12 @@ var trackedForEmailIds=[];
 for(let i=0;i<trackedForEmailIdsObject.length;i++){
     trackedForEmailIds.push(trackedForEmailIdsObject[i].enterpriseId)
 }
-alert(trackedForEmailIds);
 var leadsDLObject = dlsJSON.message["leads"];
 var leadsEmailIds = [];
 for(let i=0;i<leadsDLObject.length;i++){
     console.log("leads",leadsEmailIds)
     leadsEmailIds.push(leadsDLObject[i].enterpriseId)
 }
-alert("leads=",leadsEmailIds);
 var data ={
     "activityName":document.getElementById('activityName').value,
     "activityDescription":document.getElementById('activityDescription').value,

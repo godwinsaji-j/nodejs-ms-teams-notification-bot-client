@@ -44,6 +44,16 @@
   <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 </head>
 <body>
+  <!-- Nav Bar -->
+<div class="absolute">
+  <ul>
+    <li><a href="" id="My-Bucket"><i class="fa-solid fa-bucket"></i> My Bucket</a></li>
+    <li><a href="" id="New-Activity"><i class="fa-solid fa-plus"></i> New Follow-Up</a></li>
+    <li><a href="" id="Track-Existing"><i class="fa-solid fa-location-crosshairs"></i> Track Existing</a></li>
+    <li><a href="http://localhost:8888/activity/tech-stack-team" id="Tech-Stack"><i class="fa-sharp fa-solid fa-cubes-stacked"></i> Tech Stack</a></li>
+  </ul>
+</div>
+<!-- Nav Bar End-->
   <div class="row">
     <div class="col-md-9">
     <div class="container-fluid">
@@ -71,6 +81,17 @@
   </div>
 </div>
 <script>
+  var userId=window.location.href.split('/')[4];
+  userId=window.location.href.split('/')[4]
+  var navMyBucket = document.getElementById('My-Bucket');
+  var navNewActivity = document.getElementById('New-Activity');
+  var navtrackExisting = document.getElementById('Track-Existing');
+
+
+  navNewActivity.href = "http://localhost:8888/activity/"+userId+"/start-new-follow-up";
+  navtrackExisting.href = "http://localhost:8888/activity/"+userId+"/follow-up-existing";
+  navMyBucket.href = "http://localhost:8888/activity/"+userId+"/my-activity-bucket"
+
 var jsonExcelData={};
 
 var userId = window.location.href.split("/")[4];
