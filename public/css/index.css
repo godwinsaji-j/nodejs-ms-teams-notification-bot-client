@@ -1,0 +1,50 @@
+body{
+ background-color: black;   
+}
+.starklogo{
+    height: 75px;
+    position: absolute;
+}
+canvas{
+    position: absolute;
+    bottom: 0;
+}
+.container{
+    border-radius: 50px;
+    background-image:url('../../src/app_bg/arc_triangle_cropped.gif');
+}
+.center-piece-wrappper{
+    margin-top: 50px;
+}
+.side-panel-img{
+    height: 600px;
+    position: absolute;
+    left: -200px;
+    top: 75px;
+}
+.arc-reactor-image-wrapper{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 100000;
+}
+.arc-reactor-image{
+    height: 300px;
+    margin-top: 43px;
+}
+.voice-image-wrapper{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 99999;
+}
+.voice-image{
+    height:350px;
+}
+.iron-eyes-image-wrapper{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 99998;
+}

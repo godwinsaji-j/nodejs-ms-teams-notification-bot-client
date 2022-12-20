@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<style>
+    .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+    visibility: visible;
+    animation: cd-bounce-1 .8s;
+}
+.dot-danger .vertical-timeline-element-icon {
+    background: #d92550;
+}
+.vertical-time-simple .vertical-timeline-element-icon {
+    height: 14px;
+    width: 14px;
+    background: #e9ecef;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    display: block;
+    border-radius: 20px;
+}
+.vertical-without-time .vertical-timeline-element-icon {
+    left: 4px;
+}
+.vertical-timeline-element-icon {
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.vertical-time-simple .vertical-timeline-element-icon::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -4px 0 0 -4px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 20px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <div class="mb-3 card">
+                    <div class="card-header-tab card-header">TEAMS</div>
+                    <div class="p-0 card-body">
+                        <ul>
+                            <li><a href="">Jarvis</a></li>
+                            <li><a href="">Lumberghs</a></li>
+                            <li><a href="">Shield</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="mb-3 card">
+                    <div class="card-header-tab card-header">MEMBERS</div>
+                    <div class="p-0 card-body">
+                        <div class="vertical-timeline-item dot-danger vertical-timeline-element">
+                            <div>
+                            <span class="vertical-timeline-element-icon bounce-in"></span>
+                            <div class="vertical-timeline-element-content bounce-in">
+                            <h4 class="timeline-title">All Hands Meeting</h4>
+                            </div>
+                            </div>
+                            </div>
+                        <ul>
+
+                            <li><a href="">Vishnu</a></li>
+                            <li><a href="">Jayaprakash</a></li>
+                            <li><a href="">Hari</a></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div id="deetewrapper">
+
+    </div>
+</body>
+<script>
+
+var div=document.getElementById('deetewrapper');
+    var deleteBtn=document.createElement('button');
+    deleteBtn.setAttribute("onclick","deleted('Jesus Jesus')")
+div.appendChild(deleteBtn);
+
+    function deleted(taskId){
+        alert(taskId);
+    }
+</script>
+</html>

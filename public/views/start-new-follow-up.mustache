@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus</title>
+      <!-- CSS only -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/solid.min.js" integrity="sha512-F0Gp9qi8/3qyo+62Pi1ZgGe6hAUxPbzOnqhhpJYAMUGDmOys95dCRCVYfQawlUeoGp1Rj/K9V7NboA9sQ9BtKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/navbar.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+    select {
+  /* Reset */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 14em;
+  height: 2em;
+  padding: 0 4em 0 1em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9a/Caret_down_font_awesome.svg) no-repeat right 0.8em center/1.4em, linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
+  color: black;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  /* <option> colors */
+  /* Remove focus outline */
+  /* Remove IE arrow */
+}
+select option {
+  color: inherit;
+}
+select:focus {
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+.image-blurred-edge {
+    background-image: url('/images/start-new-follow-up-hero.png');
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+body{
+    /* background: linear-gradient(93deg, white,white, #e7beca, #e7beca, #e7beca ); */
+    /*background-color:#8594b3c7 !important;*/
+    background: linear-gradient(93deg, #5eb1aa,#83b4bb, #718cc78c, #8594b3c7, #8594b3c7);
+    /* background: linear-gradient(93deg, #5eb1aa,#68a5f0, #e7beca, #e7beca, #e7beca ); */
+}
+h1{
+    margin-bottom: 20px !important;
+}
+.label{
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+textarea,input,select{
+    border-radius: 5px !important;
+    margin-bottom:15px !important;
+    margin-top: 10px;
+}
+#start-tracking{
+    width: 250px;
+}
+#start-tracking>img{
+    float: left;
+}
+
+#start-tracking>span{
+    float: left;
+    margin-top: 12px !important;
+    margin-left: 23px;
+}
+
+</style>
+<body>
+<!-- Nav Bar -->
+<div class="absolute">
+    <ul>
+      <li><a href="" id="My-Bucket"><i class="fa-solid fa-bucket"></i> My Bucket</a></li>
+      <li><a href="" id="New-Activity"><i class="fa-solid fa-plus"></i> New Follow-Up</a></li>
+      <li><a href="" id="Track-Existing"><i class="fa-solid fa-location-crosshairs"></i> Track Existing</a></li>
+      <li><a href="http://localhost:8888/activity/tech-stack-team" id="Tech-Stack"><i class="fa-sharp fa-solid fa-cubes-stacked"></i> Tech Stack</a></li>
+    </ul>
+  </div>
+  <!-- Nav Bar End-->
+  <br>
+ <div class="container-fluid col-xxl-8 px-4">
+    <div class="row flex-lg-row-reverse align-items-center g-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/images/start-new-follow-up-hero.png" class="d-block mx-lg-auto img-fluid hero-img-shadow" alt="Bootstrap Themes" loading="lazy">
+        <!--<div class="image-blurred-edge">-->
+
+        </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-20 ">Start A New Follow-Up</h1>
+        <br>
+        <div class="d-grid gap-2 justify-content-md-start">
+            <span class="label d-none">Tracked By:</span> <span class="d-none"><input type="text" name="" id="trackedByInput" value="Godwin"></span>
+            <div class="row">
+                <div class="col-md-5">
+                    <span class="label"><i class="fa-solid fa-file-signature"></i> Activity Name:</span> <br><span><input type="text" name="" id="activityName"></span>
+                    <br>
+                    <span class="label"><i class="fa-solid fa-truck"></i> Select A DL To Track</span>
+                    <span><select type="text" name="" id="trackedForInput"><option value="">--Select--</option></select></span>
+                    <!--<br>-->
+                </div>
+                <div class="col-md-7">
+                    <span class="label">Activity Description:</span> <span><textarea type="" name="" id="activityDescription" rows="4" cols="50"></textarea></span>
+            <!--<br>-->
+                </div>
+            </div>
+                <span class="label"><i class="fa-solid fa-users"></i> Users under the DL:</span> 
+                <span id="tracked-recepients-expanded"></span>
+            <!--<br>-->
+                
+                
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="label"><i class="fa-solid fa-calendar-days"></i> Activity Start Date:</span><span><input type="date" name="" id="activityStartDate"></span>
+                    <!--<br>-->
+                </div>
+                <div class="col-md-4">
+                    <span class="label"><i class="fa-solid fa-calendar-days"></i> Activity End Date:</span><span><input type="date" name="" id="activityEndDate"></span>
+            <!--<br>-->
+                </div>
+                <div class="col-md-4">
+                    <span class="label"><i class="fa-solid fa-calendar-days"></i> Reminder Date:</span> <span><input type="date" name="" id="reminderDate"></span>
+            <!--<br>-->
+                </div>
+            </div>
+                <span class="label d-none">Status</span> <span  class="d-none"><Select name="" id="status"><option value="">Not Started</option></Select></span>
+            <!--<br>-->
+                <span class="label"><i class="fa-solid fa-chart-pie"></i> Send Report To DL</span> <span><Select name="" id="sendReportToDL"></Select></span>
+            <!--<br>-->
+                <p class="mx-auto mt-5"><button id="start-tracking" class="btn btn-danger"><img src="/images/start_tracking_btn_icon.png" alt="" height="50px"><span><b>Start Tracking</b></span></button></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+<script>
+    var userId=window.location.href.split('/')[4];
+    userId=window.location.href.split('/')[4]
+    var navMyBucket = document.getElementById('My-Bucket');
+    var navNewActivity = document.getElementById('New-Activity');
+    var navtrackExisting = document.getElementById('Track-Existing');
+
+
+    navNewActivity.href = "http://localhost:8888/activity/"+userId+"/start-new-follow-up";
+    navtrackExisting.href = "http://localhost:8888/activity/"+userId+"/follow-up-existing";
+    navMyBucket.href = "http://localhost:8888/activity/"+userId+"/my-activity-bucket"
+
+</script>
+
+<script>
+//Settting All date fields to today's date by default
+const date = new Date();
+const dateString = date.toISOString().split('T')[0];
+document.getElementById('activityStartDate').defaultValue = dateString;
+document.getElementById('reminderDate').defaultValue = dateString;
+document.getElementById('activityEndDate').defaultValue = dateString;
+
+var dlsJSON = {};
+var startTrackingBtn = document.getElementById('start-tracking');
+startTrackingBtn.addEventListener('click',function(){
+    console.log(dlsJSON)
+
+var trackedForDL = document.getElementById('trackedForInput').value;
+var trackedForEmailIdsObject=dlsJSON.message[trackedForDL];
+var trackedForEmailIds=[];
+for(let i=0;i<trackedForEmailIdsObject.length;i++){
+    trackedForEmailIds.push(trackedForEmailIdsObject[i].enterpriseId)
+}
+alert(trackedForEmailIds);
+var leadsDLObject = dlsJSON.message["leads"];
+var leadsEmailIds = [];
+for(let i=0;i<leadsDLObject.length;i++){
+    console.log("leads",leadsEmailIds)
+    leadsEmailIds.push(leadsDLObject[i].enterpriseId)
+}
+alert("leads=",leadsEmailIds);
+var data ={
+    "activityName":document.getElementById('activityName').value,
+    "activityDescription":document.getElementById('activityDescription').value,
+    "StartDate":document.getElementById('activityStartDate').value,
+    "generalReminderDate":document.getElementById('reminderDate').value,
+    "EndDate":document.getElementById('activityEndDate').value,
+    "Status":document.getElementById('status').value,
+    "trackedBy":window.location.href.split("/")[4],
+    "completedDL":[],
+    "inProgressDL":[],
+    "trackedForDL":document.getElementById('trackedForInput').value,
+    "trackedForEmailIds":trackedForEmailIds,
+    "sendReportToDL":document.getElementById('sendReportToDL').value,
+    "reportedIssues":{},
+    "leadsDL":leadsEmailIds
+}
+console.log(data);
+fetch('http://localhost:8888/activity/start-new-follow-up',{
+method:'post',
+body:JSON.stringify(data),
+headers: new Headers({
+	'Content-Type':'application/json'
+	})
+})
+.then(res=>(res.json()))
+.then(data=>{
+console.log(data);
+});
+
+})
+
+$(document).ready(function(){
+displayDls();
+});
+
+function displayDls(){
+    fetch('http://localhost:8888/activity/get-dls',{
+method:'get',
+headers: new Headers({
+	'Content-Type':'application/json'
+	})
+})
+.then(res=>(res.json()))
+.then(data=>{
+console.log(data);
+dlsJSON=data;
+populateDls(data);
+});
+
+function populateDls(data){
+    var trackedForInput = document.getElementById("trackedForInput");
+    var sendReportToDL = document.getElementById("sendReportToDL");
+    var keys = Object.keys(data.message);
+    for(let i=0;i<keys.length;i++){
+        var trackedForOption = document.createElement("option");
+        trackedForOption.innerText = keys[i];
+        trackedForInput.appendChild(trackedForOption);
+        var sendReportToDLOption = document.createElement("option");
+        sendReportToDLOption.innerText = keys[i];
+        sendReportToDL.appendChild(sendReportToDLOption);
+    }
+    trackedForInput.addEventListener('input',function(event){
+        var trackedRecepientsExpanded = document.getElementById("tracked-recepients-expanded");
+        trackedRecepientsExpanded.innerHTML="";
+        console.log(event.target.value);
+        var selectedDL=data.message[event.target.value];
+        console.log(selectedDL)
+        for(let i=0;i<selectedDL.length;i++){
+            var span = document.createElement('span');
+            span.innerText = selectedDL[i].name+";"
+            trackedRecepientsExpanded.appendChild(span);
+        }
+    })
+}
+
+}
+</script>
+</body>
+</html>
